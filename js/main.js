@@ -1,6 +1,9 @@
-const navbarToggle = document.querySelector(".navbar-toggle");
-const navbarItems = document.querySelector(".navbar-items");
-
-navbarToggle.addEventListener("click", () => {
-  navbarItems.classList.toggle("show");
-});
+addEventListener('DOMContentLoaded', () => {
+  const btn_menu = document.querySelector('.btn_menu')
+  if (btn_menu){
+    btn_menu.addEventListener('click', () => {
+      const menu_items = document.querySelector('.menu_items')
+      menu_items.classList.toggle('show')
+    })
+  }
+})
