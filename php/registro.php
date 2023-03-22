@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/registro.css">
+  <link rel="shortcut icon" href="../img/logo_utp_watch_sin_fondo.png" type="image/x-icon">
   <title>UTP Watch</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
           <input type="password" name="repetir_contraseña" id="repetir_contraseña" class="entry" placeholder="Repetir la Contraseña">
           <button type="submit" class="botones">Guardar</button>
         </form>
-        <button type="submit" class="botones" onclick="window.location='login.html'">Iniciar Sesión</button>
+        <button type="submit" class="botones" onclick="window.location='login.php'">Iniciar Sesión</button>
         <a href="#">¿Olvidaste tu contraseña?</a>
       </div>
     </div>
