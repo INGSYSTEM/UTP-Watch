@@ -1,0 +1,184 @@
+/* -- Panel -- */
+
+.panel{
+  background-image: url("/img/panel.png");
+  height: 500px; /* altura que desees */
+  background-size: cover; /* ajusta la imagen al ancho y alto del contenedor */
+  background-position: center center; /* posiciona la imagen en el centro del contenedor */
+  backdrop-filter: blur(10px) brightness(0.8) saturate(1.2);
+  text-align: center;
+}
+
+button{
+  margin-top: 350px;
+  background-color: var(--blue);
+  color: var(--white);
+  width: 120px; /* Agrega un ancho */
+  height: 40px; /* Agrega una altura */
+  border: none; /* Quita el borde */
+  border-radius: 15px;
+  text-align: center;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: var(--skiblue);
+}
+
+/* -- Regla para dispositivos móviles pequeños -- */
+@media (max-width: 480px) {
+  .panel {
+    height: 300px;
+  }
+  button{
+    margin-top: 240px;
+  }
+}
+
+/* Regla para dispositivos móviles de gama baja */
+@media (min-width: 481px) and (max-width: 599px) {
+  .panel {
+    height: 360px;
+  }
+}
+
+/* Regla para dispositivos móviles de gama media */
+@media (min-width: 600px) and (max-width: 767px) {
+  .panel {
+    height: 375px;
+  }
+}
+
+/* Regla para tablets pequeñas */
+@media (min-width: 768px) and (max-width: 959px) {
+  .panel {
+    height: 768px;
+  }
+}
+
+/* Regla para tablets grandes */
+@media (min-width: 960px) and (max-width: 1023px) {
+  .panel {
+    height: 960px;
+  }
+}
+
+/* Regla para dispositivos móviles y tablets de gama alta */
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .panel {
+    height: 500px;
+  }
+}
+
+/* Regla para dispositivos móviles y tablets de gama alta */
+@media (min-width: 1200px) {
+  .panel {
+    height: 500px;
+  }
+}
+
+/* -- CATÁLOGO -- */
+
+.catalogo-peliculas {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.fila-peliculas {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Agregar un espacio de 20px entre las películas */
+  margin-right: -10px;
+  justify-content: space-between;
+  margin-left: -10px;
+}
+
+.pelicula {
+  margin: 0; /* Eliminar el margen anterior para que el gap se aplique */
+  width: 150px;
+  text-align: center;
+}
+
+.pelicula img {
+  width: 100%;
+  height: auto;
+}
+
+.paginacion {
+  display: flex;
+  justify-content: center;
+}
+
+.paginacion button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.paginacion button.anterior {
+  margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+  .pelicula {
+    width: 100%; /* Cambiar el ancho de las películas a 100% */
+    margin-bottom: 20px; /* Agregar un margen inferior de 20px */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 599px) {
+  .pelicula {
+    width: calc(50% - 10px); /* Cambiar el ancho de las películas a 50% menos el espacio de separación */
+    margin-bottom: 20px; /* Agregar un margen inferior de 20px */
+  }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+  .pelicula {
+    width: calc(33.33% - 10px); /* Cambiar el ancho de las películas a 33.33% menos el espacio de separación */
+    margin-bottom: 20px; /* Agregar un margen inferior de 20px */
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .fila-peliculas {
+    flex-wrap: wrap; /* Agregar un salto de línea para que las películas se acomoden en varias filas */
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .pelicula {
+    width: calc(50% - 10px); /* Cambiar el ancho de las películas a 50% menos el espacio de separación */
+    margin-bottom: 20px; /* Agregar un margen inferior de 20px */
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1023px) {
+  .catalogo {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .catalogo li {
+    width: 30%;
+  }
+
+  .catalogo li img {
+    width: 100%;
+  }
+
+  .catalogo li h2 {
+    font-size: 1.5rem;
+  }
+}

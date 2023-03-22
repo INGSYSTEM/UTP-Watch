@@ -7,9 +7,31 @@
   --black: #000;
   --blue: #19A7CE;
   --white: #fff;
+  --gris: #1b2430;
+  --skiblue: #29b3d9;
+  --grisclaro: #383d45;
 }
 
-/* -- BARRA DE NAVEGACION (NAVBAR) -- */
+body{
+  background-color: var(--gris);
+}
+
+/* -- SCROLL -- */
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--grisclaro);
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: var(--blue);
+}
+
+/* -- BARRA DE NAVEGACION -- */
 
 .logo a img {
   cursor: pointer;
@@ -48,7 +70,7 @@
   text-decoration: none;
   font-weight: 900;
   transition: all 0.3s ease 0s;
-  color: #eee;
+  color: var(--white);
   display: block;
   text-transform: uppercase;
 }
@@ -89,7 +111,7 @@ ul.show {
     position: fixed;
     width: 100vw;
     height: calc(100% - 65px);
-    background-color: #1b2430;
+    background-color: var(--gris);
     top: -100vh;
     text-align: center;
     transition: all 0.4s;
