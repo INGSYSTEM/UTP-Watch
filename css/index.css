@@ -84,7 +84,7 @@
   }
   .slogan{
     margin-top: 110px;
-    font-size: 14px;
+    font-size: 24px;
   }
 }
 
@@ -95,7 +95,7 @@
   }
   .slogan{
     margin-top: 110px;
-    font-size: 14px;
+    font-size: 24px;
   }
 }
 
@@ -137,9 +137,9 @@
 }
 
 .paginacion button {
-  background-color: var(--blue);
+  background-color: var(--gris);
   color: white;
-  border: none;
+  border: solid 2px var(--blue);
   padding: 10px 10px;
   text-align: center;
   text-decoration: none;
@@ -150,6 +150,7 @@
   cursor: pointer;
   border-radius: 50%;
   width: 40px;
+  box-shadow: 0 0 10px #19A7CE, 0 0 40px #19A7CE, 0 0 80px #19A7CE;
 }
 
 .paginacion button.anterior {

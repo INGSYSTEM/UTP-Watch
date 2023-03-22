@@ -189,6 +189,10 @@ footer div a:hover {
   margin-top: 10px;
 }
 
+a{
+  text-decoration: none;
+}
+
 @media screen and (max-width: 768px) {
   footer .informacion_pagina {
     font-size: 10px;
