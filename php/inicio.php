@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/fontawesome-free-6.2.1-web/css/all.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="shortcut icon" href="/img/logo_utp_watch_sin_fondo.png" type="image/x-icon">
-    <script src="/js/main.js"></script>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/fontawesome-free-6.2.1-web/css/all.css">
+    <link rel="stylesheet" href="../css/inicio.css">
+    <link rel="shortcut icon" href="../img/logo_utp_watch_sin_fondo.png" type="image/x-icon">
+    <script src="../js/main.js"></script>
     <title>UTP Watch</title>
   </head>
   <body>
     <header>
       <nav class="menu">
         <div class="logo">
-          <a href="index.html"><img src="/img/logo_utp_watch_sin_fondo.png" alt="Logo UTP Watch"></a>
+          <a href="inicio.html"><img src="../img/logo_utp_watch_sin_fondo.png" alt="Logo UTP Watch"></a>
         </div>
         <ul class="menu_items">
-          <li class="activo"><a href="index.html">Inicio</a></li>
+          <li class="activo"><a href="inicio.html">Inicio</a></li>
           <li><a href="#">Películas</a></li>
           <li><a href="#">Series</a></li>
           <li><a href="#">Contactanos</a></li>
@@ -86,7 +86,7 @@
             <a href="mailto:admision@utp.edu.pe">&nbsp&nbspadmision@utp.edu.pe</a>
           </div>
           <div class="logo">
-            <a href="index.html"><img src="/img/logo_utp_watch_sin_fondo.png" alt="Logo UTP Watch"></a>
+            <a href="inicio.html"><img src="../img/logo_utp_watch_sin_fondo.png" alt="Logo UTP Watch"></a>
           </div>
         </div>
       </div>

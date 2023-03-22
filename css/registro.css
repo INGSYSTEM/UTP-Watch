@@ -5,7 +5,7 @@
 }
 
 .contenedor_datos .imagen{
-  background-image: url("/img/panel_login.jpg");
+  background-image: url("../img/panel_login.jpg");
   height: 100vh;
   width: 50%;
   background-size: cover;
