@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap");
 
 *{
   margin: 0;
@@ -14,6 +15,7 @@
   --skiblue: #29b3d9;
   --grisclaro: #383d45;
   --font_lobster: "Lobster", cursive;
+  --font_poppins: "Poppins", sans-serif;
 }
 
 body{
@@ -46,7 +48,7 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 .menu {
-  background-color: var(--black);
+  background-color: transparent;
   height: 75px;
   width: 100%;
   display: flex;
@@ -57,6 +59,7 @@ body::-webkit-scrollbar-thumb:hover {
   position: fixed;
   top: 0;
   z-index: 1;
+  font-family: var(--font_poppins);
 }
 
 .menu_items {
@@ -93,6 +96,14 @@ body::-webkit-scrollbar-thumb:hover {
 
 ul.show {
   top: 75px;
+}
+
+.menu.transparent {
+  background-color: transparent;
+}
+
+.menu.black {
+  background-color: var(--black);
 }
 
 @media screen and (max-width: 952px) {
@@ -149,7 +160,7 @@ ul.show {
 /* -- PIE DE PAGINA (FOOTER) -- */
 footer {
   margin: 20px 0px 0px 0px;
-  padding: 10px 20px;
+  padding: 20px 20px;
   box-shadow: 1px -1px 15px var(--black);
   text-align: center; /* Se agrega para centrar contenido del footer */
 }

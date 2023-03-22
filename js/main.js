@@ -7,3 +7,14 @@ addEventListener('DOMContentLoaded', () => {
     })
   }
 })
+
+window.addEventListener("scroll", function() {
+  var menu = document.querySelector(".menu");
+  if (window.scrollY > 0) {
+    menu.classList.add("black");
+    menu.classList.remove("transparent");
+  } else {
+    menu.classList.add("transparent");
+    menu.classList.remove("black");
+  }
+});
