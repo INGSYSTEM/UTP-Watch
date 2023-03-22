@@ -145,3 +145,57 @@ ul.show {
     height: calc(100% - 65px);
   }
 }
+
+/* -- PIE DE PAGINA (FOOTER) -- */
+footer {
+  margin: 20px 0px 0px 0px;
+  padding: 10px 20px;
+  box-shadow: 1px -1px 15px var(--black);
+  text-align: center; /* Se agrega para centrar contenido del footer */
+}
+
+footer .logo {
+  margin: 30px 0 30px 0;
+}
+
+footer .logo .devteam {
+  font-size: 50px;
+}
+
+footer .logo .proyect {
+  font-size: 30px;
+}
+
+footer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* Agrega esto para que se ajuste a la pantalla */
+}
+
+footer .informacion_pagina {
+  margin: 15px 30px 30px 30px; /* Se reducen los márgenes para que se ajuste a la pantalla */
+}
+
+footer div {
+  text-align: center;
+}
+
+footer div a:hover {
+  color: var(--azul);
+}
+
+.contactos_utp{
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  footer .informacion_pagina {
+    font-size: 10px;
+  }
+  .contactos_utp {
+    font-size: 7px;
+  }
+}
+
+/* -- -- */
