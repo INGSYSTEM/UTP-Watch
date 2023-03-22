@@ -93,9 +93,9 @@ button:hover{
   display: flex;
   justify-content: center;
   gap: 20px; /* Agregar un espacio de 20px entre las películas */
-  margin-right: -10px;
+  margin-right: 10px;
   justify-content: space-between;
-  margin-left: -10px;
+  margin-left: 10px;
 }
 
 .pelicula {
@@ -115,7 +115,7 @@ button:hover{
 }
 
 .paginacion button {
-  background-color: #4CAF50;
+  background-color: var(--blue);
   color: white;
   border: none;
   padding: 10px 16px;
