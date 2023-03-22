@@ -24,7 +24,7 @@
           <input type="password" name="repetir_contraseña" id="repetir_contraseña" class="entry" placeholder="Repetir la Contraseña">
           <button type="submit" class="botones">Guardar</button>
         </form>
-        <button type="submit" class="botones" onclick="window.location='login.php'">Iniciar Sesión</button>
+        <button type="submit" class="botones" onclick="window.location='index.php'">Iniciar Sesión</button>
         <a href="#">¿Olvidaste tu contraseña?</a>
       </div>
     </div>
