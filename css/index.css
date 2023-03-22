@@ -9,20 +9,17 @@
   text-align: center;
 }
 
-button{
-  margin-top: 350px;
-  background-color: var(--blue);
-  color: var(--white);
-  width: 120px; /* Agrega un ancho */
-  height: 40px; /* Agrega una altura */
-  border: none; /* Quita el borde */
-  border-radius: 15px;
-  text-align: center;
-  cursor: pointer;
-}
-
-button:hover{
-  background-color: var(--skiblue);
+.slogan{
+  position: absolute;
+  top: 50%; /* Coloca el elemento en el centro vertical */
+  left: 50%; /* Coloca el elemento en el centro horizontal */
+  transform: translate(-50%, -50%); /* Centra el elemento en el centro exacto */
+  text-align: center; /* Centra el texto horizontalmente */
+  width: 100%; /* Ancho del contenedor */
+  font-family: var(--font_lobster);
+  font-weight: 100;
+  margin-top: 85px;
+  font-size: 24px;
 }
 
 /* -- Regla para dispositivos móviles pequeños -- */
@@ -30,8 +27,9 @@ button:hover{
   .panel {
     height: 300px;
   }
-  button{
-    margin-top: 240px;
+  .slogan{
+    margin-top: 110px;
+    font-size: 14px;
   }
 }
 
@@ -40,12 +38,20 @@ button:hover{
   .panel {
     height: 360px;
   }
+  .slogan{
+    margin-top: 110px;
+    font-size: 14px;
+  }
 }
 
 /* Regla para dispositivos móviles de gama media */
 @media (min-width: 600px) and (max-width: 767px) {
   .panel {
     height: 375px;
+  }
+  .slogan{
+    margin-top: 110px;
+    font-size: 14px;
   }
 }
 
@@ -54,12 +60,20 @@ button:hover{
   .panel {
     height: 768px;
   }
+  .slogan{
+    margin-top: 110px;
+    font-size: 14px;
+  }
 }
 
 /* Regla para tablets grandes */
 @media (min-width: 960px) and (max-width: 1023px) {
   .panel {
     height: 960px;
+  }
+  .slogan{
+    margin-top: 110px;
+    font-size: 14px;
   }
 }
 
@@ -68,12 +82,20 @@ button:hover{
   .panel {
     height: 500px;
   }
+  .slogan{
+    margin-top: 110px;
+    font-size: 14px;
+  }
 }
 
 /* Regla para dispositivos móviles y tablets de gama alta */
 @media (min-width: 1200px) {
   .panel {
     height: 500px;
+  }
+  .slogan{
+    margin-top: 110px;
+    font-size: 14px;
   }
 }
 

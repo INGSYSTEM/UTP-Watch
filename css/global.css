@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
 *{
   margin: 0;
   padding: 0;
@@ -11,6 +13,7 @@
   --gris: #1b2430;
   --skiblue: #29b3d9;
   --grisclaro: #383d45;
+  --font_lobster: "Lobster", cursive;
 }
 
 body{
