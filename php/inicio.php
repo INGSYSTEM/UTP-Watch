@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/fontawesome-free-6.2.1-web/css/all.css">
     <link rel="stylesheet" href="../css/inicio.css">
-    <link rel="shortcut icon" href="../img/logo_utp_watch_sin_fondo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon_utp_watch.png" type="image/x-icon">
     <script src="../js/main.js"></script>
     <title>UTP Watch</title>
   </head>

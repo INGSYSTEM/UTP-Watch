@@ -32,7 +32,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/global.css">
   <link rel="stylesheet" href="../css/index.css">
-  <link rel="shortcut icon" href="../img/logo_utp_watch_sin_fondo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="../img/favicon_utp_watch.png" type="image/x-icon">
   <title>UTP Watch</title>
 </head>
 <body>
