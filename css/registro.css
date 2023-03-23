@@ -20,7 +20,7 @@
   border: solid 2px var(--blue);
   box-shadow: 0 0 10px #19A7CE, 0 0 40px #19A7CE, 0 0 80px #19A7CE;
   width: 500px;
-  height: 500px;
+  height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -59,4 +59,26 @@ form{
 
 .contenedor_datos .registro_entrada a{
   text-align: center;
+}
+
+h2{
+  font-family: var(--font_lobster);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor_datos .imagen {
+    background-image: none;
+    height: 0;
+    width: 0;
+  }
+  .contenedor_datos{
+    margin-top: 50px;
+  }
+
+  .contenedor_datos .datos{
+    margin: 20px;
+  }
 }

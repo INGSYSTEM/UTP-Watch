@@ -38,8 +38,8 @@
     <div class="datos">
       <div class="registro_entrada">
         <!-- aquí se colocarían los datos -->
-        <span style="text-justify: center; margin-bottom: 20px;">Registrate</span>
         <form action="registro.php" method="POST" onsubmit="return validarFormulario()">
+          <h2 style="color: var(--blue);">Resgristrate</h2>
           <input type="text" name="user" class="entry" placeholder="Nombre Usuario">
           <input type="email" name="email" class="entry" placeholder="ejemplo@utpwatch.com">
           <input type="password" name="password" id="contraseña" class="entry" placeholder="Contraseña">

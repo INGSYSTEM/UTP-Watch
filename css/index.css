@@ -60,3 +60,25 @@ form{
 .contenedor_datos .registro_entrada a{
   text-align: center;
 }
+
+h2{
+  font-family: var(--font_lobster);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 36px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor_datos .imagen {
+    background-image: none;
+    height: 0;
+    width: 0;
+  }
+  .contenedor_datos{
+    margin-top: 80px;
+  }
+
+  .contenedor_datos .datos{
+    margin: 20px;
+  }
+}
