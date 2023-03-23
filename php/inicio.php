@@ -22,7 +22,7 @@
           <li><a href="#">Películas</a></li>
           <li><a href="#">Series</a></li>
           <li><a href="#">Contactanos</a></li>
-          <li><a href="cerrar_sesion.php">Cerra Sesión</a></li>
+          <li><a href="cerrar_sesion.php">Cerrar Sesión</a></li>
         </ul>
         <span class="btn_menu">
           <i class="fa fa-bars"></i>
