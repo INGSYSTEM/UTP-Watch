@@ -15,13 +15,14 @@
     <header>
       <nav class="menu">
         <div class="logo">
-          <a href="inicio.html"><img src="../img/logo_utp_watch_sin_fondo.png" alt="Logo UTP Watch"></a>
+          <a href="inicio.php"><img src="../img/logo_utp_watch_sin_fondo.png" alt="Logo UTP Watch"></a>
         </div>
         <ul class="menu_items">
-          <li class="activo"><a href="inicio.html">Inicio</a></li>
+          <li class="activo"><a href="inicio.php">Inicio</a></li>
           <li><a href="#">Películas</a></li>
           <li><a href="#">Series</a></li>
           <li><a href="#">Contactanos</a></li>
+          <li><a href="cerrar_sesion.php">Cerra Sesión</a></li>
         </ul>
         <span class="btn_menu">
           <i class="fa fa-bars"></i>
@@ -86,7 +87,7 @@
             <a href="mailto:admision@utp.edu.pe">&nbsp&nbspadmision@utp.edu.pe</a>
           </div>
           <div class="logo">
-            <a href="inicio.html"><img src="../img/logo_utp_watch_sin_fondo.png" alt="Logo UTP Watch"></a>
+            <a href="inicio.php"><img src="../img/logo_utp_watch_sin_fondo.png" alt="Logo UTP Watch"></a>
           </div>
         </div>
       </div>

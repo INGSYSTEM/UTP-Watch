@@ -1,3 +1,24 @@
+<?php
+  require 'db.php';
+
+  $message = '';
+
+  if (!empty($_POST['user']) && !empty($_POST['email']) && !empty($_POST['password'])) {
+    $sql = "INSERT INTO usuarios (user, email, password) VALUES (:user, :email, :password)";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(':user', $_POST['user']);
+    $stmt->bindParam(':email', $_POST['email']);
+    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+    $stmt->bindParam(':password', $password);
+
+    if ($stmt->execute()) {
+      $message = 'Haz creado de manera exitosa un nuevo usuario';
+    } else {
+      $message = 'Lo sentimos, debe haber habido un problema al crear su cuenta: ' . $stmt->errorInfo()[2];
+    }
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -17,11 +38,12 @@
     <div class="datos">
       <div class="registro_entrada">
         <!-- aquí se colocarían los datos -->
-        <form action="data.php" method="POST" onsubmit="return validarFormulario()">
-          <input type="text" name="usuario" class="entry" placeholder="Nombre Usuario">
-          <input type="email" name="correo" class="entry" placeholder="ejemplo@utpwatch.com">
-          <input type="password" name="contraseña" id="contraseña" class="entry" placeholder="Contraseña">
-          <input type="password" name="repetir_contraseña" id="repetir_contraseña" class="entry" placeholder="Repetir la Contraseña">
+        <span style="text-justify: center; margin-bottom: 20px;">Registrate</span>
+        <form action="registro.php" method="POST" onsubmit="return validarFormulario()">
+          <input type="text" name="user" class="entry" placeholder="Nombre Usuario">
+          <input type="email" name="email" class="entry" placeholder="ejemplo@utpwatch.com">
+          <input type="password" name="password" id="contraseña" class="entry" placeholder="Contraseña">
+          <input type="password" name="repetir_password" id="repetir_contraseña" class="entry" placeholder="Repetir la Contraseña">
           <button type="submit" class="botones">Guardar</button>
         </form>
         <button type="submit" class="botones" onclick="window.location='index.php'">Iniciar Sesión</button>

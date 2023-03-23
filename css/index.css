@@ -20,7 +20,7 @@
   border: solid 2px var(--blue);
   box-shadow: 0 0 10px #19A7CE, 0 0 40px #19A7CE, 0 0 80px #19A7CE;
   width: 500px;
-  height: 400px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,6 +29,11 @@
 }
 
 .contenedor_datos .registro_entrada {
+  display: flex;
+  flex-direction: column;
+}
+
+form{
   display: flex;
   flex-direction: column;
 }
