@@ -7,7 +7,7 @@
   require 'db.php';
 
   if (!empty($_POST['user']) && !empty($_POST['password'])) {
-    $records = $conn->prepare('SELECT id, user, password FROM users WHERE user = :user');
+    $records = $conn->prepare('SELECT id, user, password FROM usuarios WHERE user = :user');
     $records->bindParam(':user', $_POST['user']);
     $records->execute();
     $results = $records->fetch(PDO::FETCH_ASSOC);
@@ -20,6 +20,7 @@
     } else {
       $message = 'Lo sentimos, esas credenciales no coinciden';
     }
+    exit();
   }
 
 ?>
@@ -36,14 +37,15 @@
   <title>UTP Watch</title>
 </head>
 <body>
+
   <div class="contenedor_datos">
-    <h1 class="titulo_login">Iniciar Sesión</h1>
     <div class="imagen">
       <!-- aquí se colocaría la imagen -->
     </div>
     <div class="datos">
       <div class="registro_entrada">
-        <form action="inicio.php" method="post">
+        <span>Iniciar Sesión</span>
+        <form action="index.php" method="post">
           <input type="text" name="user" id="" class="entry" placeholder="Nombre Usuario">
           <input type="password" name="password" class="entry" id="" placeholder="Contraseña">
           <button type="submit" name="login" class="botones">Ingresar</button>
